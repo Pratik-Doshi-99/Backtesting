@@ -70,10 +70,6 @@ class EMA():
             self.ema_gain_periods.append((curr_day-self.entry_date).days)
             self.position = False
             self.entry_date_list.append(self.entry_date)
-            #print('Sale Price = {}\n Purchase Price = {}\n Purchase Date = {}\n Sale Date = {}'.format(curr_price,
-            #                                                                                          self.entry_price,
-             #                                                                                     self.entry_date,
-              #                                                                                        curr_day))
         
     def get_returns(self):
         return np.array(self.ema_gains)
