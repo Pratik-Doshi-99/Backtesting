@@ -70,10 +70,7 @@ class RSI():
             self.RSI_gain_periods.append((curr_day-self.entry_date).days)
             self.entry_date_list.append(self.entry_date)
             self.position = False
-            #print('Sale Price = {}\n Purchase Price = {}\n Purchase Date = {}\n Sale Date = {}'.format(curr_price,
-            #                                                                                          self.entry_price,
-             #                                                                                     self.entry_date,
-              #                                                                                        curr_day))
+            
     def clean(self,df):
         df[self.date_column] = pd.to_datetime(df[self.date_column])
         df.sort_values(by = self.date_column,inplace = True)
