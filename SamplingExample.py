@@ -5,7 +5,11 @@ from rsi import RSI
 from ema import EMA
 import datetime as dt
 
-samples = os.listdir(r'Z:\School\Sem 4\Research Methodology\Paper\Sample')
+samples = os.listdir(r'Z:\School\Sem 4\Research Methodology\Paper\Sample')  
+
+'''
+samples is a list of the csv files that contain the historical prices of the stocks taken as sample
+'''
 
 #RSI 14 Days
 
